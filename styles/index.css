@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+
+    --stockBajo:red;
+    --stockMedio:orange;
+    --stockAlto:green;
+
+    --mainColor:hsl(318, 73%, 22%);
+    --accentMainColor:hsl(318, 73%, 30%);
+    --accent:gold;
+
+
+
+    --mainText:#581845 ;
+    --secondaryText:#EEE0C3;
+
+
+    --testBG:blue;
+    --testFont:white;
+
+    font-family: sans-serif;
+    
+  }
+  
+  .container-stock {
+    border:1px solid var(--testBG);
+    display:flex;
+    justify-content:center;
+
+   
+    padding:10px;
+
+    
+  }
+  
+
+  .buttons-medidas-list{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+}
+
+
+  .medida{
+    background-color:var(--mainColor);
+    padding:0.4em;
+    color:var(--secondaryText);
+    border:none;
+    font-size:2em;
+    flex:1;
+    
+  }
+  
+ 
+  
+  .medida-primera{
+     border-radius:20% 0 0 0;
+  }
+  
+  .medida-ultima{
+     border-radius:0 0 0 20%;
+  }
+  
+  .tabla-stock {
+    background-color:var(--mainColor);
+    padding:0 0.5rem 0 0; 
+    border-radius:0 5% 5% 0%;
+  }
+  
+  tr{
+    width:5rem;
+    padding:2rem;
+  }
+  
+  th, td{
+    padding: 2rem;
+    min-width: 3.5rem;
+    background-color:var(--accent);
+    text-align: center; 
+
+  }
+
+  td{
+      font-size: 2em;
+      font-weight: bold;
+  }
+  
+  /*acciones*/
+  
+  .stock-bajo{
+    background-color:var(--stockBajo);
+  }
+  .stock-medio{
+    background-color:var(--stockMedio);
+  }
+  
+  .stock-alto{
+    background-color:var(--stockAlto);
+  }
+  
+  .mostrarStock{
+    background-color:var(--accentMainColor);
+    color:var(--secondaryText);
+  }

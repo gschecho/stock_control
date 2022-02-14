@@ -16,5 +16,28 @@ decrement_number.addEventListener('click', function(){
 
 // check selección
 
-console.log(selection_input_size.childNodes);
+//console.log(selection_input_size.childNodes);
 
+selection_input_size.childNodes.forEach(inputs=> {
+    //console.log(inputs)
+   
+
+    inputs.addEventListener('click', ()=>{
+     size = inputs.getAttribute('for');
+    console.log(inputs.previousElementSibling)
+    let isChecked = inputs.previousElementSibling.checked;
+    
+    isChecked ? isChecked = "true" : isChecked = "false";
+
+    console.log(isChecked)
+    console.log(size)
+ 
+
+
+    })
+
+    
+});
+
+
+console.log

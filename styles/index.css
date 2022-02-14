@@ -1,3 +1,6 @@
+@import url("selector.css");
+@import url("movil.css");
+
 *{
     margin:0;
     padding:0;
@@ -23,6 +26,20 @@
     
   }
   
+
+.container{
+
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width:fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
   .container-stock {
     border:1px solid var(--testBG);
     display:flex;
@@ -56,17 +73,17 @@
  
   
   .medida-primera{
-     border-radius:20% 0 0 0;
+     border-radius:3% 0 0 0;
   }
   
   .medida-ultima{
-     border-radius:0 0 0 20%;
+     border-radius:0 0 0 3%;
   }
   
   .tabla-stock {
     background-color:var(--mainColor);
     padding:0 0.5rem 0 0; 
-    border-radius:0 5% 5% 0%;
+    border-radius:0 1% 1% 0%;
   }
   
   tr{

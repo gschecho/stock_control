@@ -1,0 +1,180 @@
+
+
+
+.logo{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+#pasteles__lista{
+
+    border-style: none;
+    border:none;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    font-size: 1em;
+
+    height: 1,5rem;
+    width: 100%;
+
+
+    padding:1rem 1.5rem;
+   
+ 
+    text-align: center;
+    font-weight: bolder;
+
+   
+    background-color: var(--mainColor);
+
+}
+
+/* option{
+
+    border:none;
+    text-align: center;
+
+    height:50px;
+}
+ */
+
+ 
+.nombre__bizcocho{
+    margin: 3rem 0;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* AÑADE BIZCOCHOS   */
+
+.stock__title{
+
+    margin:5rem 0;
+}
+
+
+.container_sel{
+    display:flex;
+    flex-direction:column;
+  
+    align-items:center;
+  }
+  
+  h2{
+    font-size:1.5em;
+    font-weight:900;
+    margin: 1rem 0  1rem 0;
+    
+  }
+  
+  .bloque__sel{
+    display:flex;
+    justify-content:center;
+   
+    padding:1.5em;
+  }
+  
+  .sel__input{
+      transform: opacity(0%);
+      transform: scale(0%);
+        opacity: 100%;
+  }
+  
+  .sel__input:checked + .sel__label{
+    background-color:var(--testBG);
+  }
+  
+  .sel__label{
+    font-size:1em;
+    text-align:center;
+    
+    padding:1rem;
+    margin: 0.5rem;
+    background-color:var(--accent);
+    color:var(--mainColor);
+    
+    min-width:25px;
+    min-height:25px;
+    
+    cursor:pointer;
+    
+    border-radius:3%;
+  
+  }
+  
+  .bloque__input{
+    display:flex;
+    padding: 1rem ;
+    flex-wrap: wrap;
+   
+    
+    
+  }
+  
+  #input__number {
+    text-align:center;
+    font-size:2em;
+    font-weight:900;      
+    border-style:none;
+
+    flex:1;
+    
+   
+
+    
+  }
+
+  #input__num__lab{
+      display: none;
+  }
+
+  
+  .bloque__input > button {
+  
+    color:var(--mainColor);
+    font-size:1.5em;
+    font-weight:900;
+
+    min-width: 50px;
+    min-height: 50px;
+    padding: 1rem;
+
+
+    flex:1;
+    
+    margin:0 1rem  0  1rem;
+    
+    background-color:var(--accent);
+    border-radius:3%;
+    border-style:none;
+  }
+
+  
+  
+  #confirmacion{
+    
+    margin:1rem 0;  
+    padding: 1em 0;
+    
+    
+    font-size:1.5em;
+    font-weight:bold;
+    
+    width: 100%;
+    border-style:none;
+    
+    
+  }
+  
+
+ 
+  

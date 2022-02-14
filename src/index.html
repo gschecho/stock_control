@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/index.css">
     <script defer src="../js/app.js"></script>
+    <script defer src="../js/selection.js"></script>
     <title>Document</title>
 </head>
 <body>
     
   <div class="container">
+  
 
-        
-        
-        <input type="text" placeholder="añadir pastel">
-        <button>+</button>
+    <div class="logo"> <p> LOLITA BAKERY </p></div>
+    <label for="Pasteles__lista"></label>
+
+    <select name="Pasteles__lista" id="pasteles__lista">
+      <option class="li__sel__pastel" value="vainilla">Vainilla</option>
+      <option class="li__sel__pastel" value="chocolate">Chocolate</option>
+      <option class="li__sel__pastel" value="red__Velvet">Red Velvet</option>
+      <option class="li__sel__pastel" value="carrot">Carrot</option>
+      <option class="li__sel__pastel" value="frambuesa">Frambuesa</option>
+      <option class="li__sel__pastel" value="moras">Moras</option>
+      <option class="li__sel__pastel" value="salt__Caramel">Salt Caramel</option>
+      <option class="li__sel__pastel" value="funfeti">Funfeti</option>
+      <option class="li__sel__pastel" value="mwColor">Color Mister Wonderfull</option>
+      <option class="li__sel__pastel" value="arcoiris">Arcoiris</option>
+    </select> 
+
+    <h1 id="bizcocho" class="nombre__bizcocho">Nombre del bizcocho seleccionado</h1>  
    
 
-    </div>
+
 
     <div class="container-stock">
         <div class="buttons-medidas-list"> 
@@ -41,7 +56,47 @@
            </tr>
          </table>
        </div>
-       
+
+
+
+       <!--PARTE 2 SELECTOR-->
+
+
+       <h2 class="stock__title">Añadir o quitar stock</h2>
+
+       <div class="container_sel">
+        <p>Selecciona el tamaño</p>
+        <div class="bloque__sel">
+          <input class="sel__input" type="checkbox" value="10"  id="sel__m10" name="sel__m10">
+          <label class="sel__label" for="10">10</label><br>
+          <input class="sel__input" type="checkbox" value="15" id="sel__m15" name="sel__m15">
+          <label class="sel__label" for="15">15</label><br>
+          <input class="sel__input" type="checkbox" value="18" id="sel__m18" name="sel__m18">
+          <label class="sel__label" for="18">18</label><br>
+          <input class="sel__input" type="checkbox" value="20" id="sel__m20" name="sel__m20">
+          <label class="sel__label" for="20">20</label><br>
+        </div>
+        
+        <p>Selecciona el número de layers</p>
+        <div class="bloque__sel">
+         
+          <input class="sel__input" type="checkbox" value="3"  id="sel__l3" name="sel__l3">
+          <label class="sel__label" for="4">3</label><br>
+          <input class="sel__input"  type="checkbox" value="4" id="sel__l4" name="sel__l43">
+          <label class="sel__label" for="4">4</label><br>
+        </div>
+        <div class="bloque__input">
+          
+          <button id="substract" value="substract">-</button>
+          <input id="input__number" name="input__number" type="number" placeholder="10" min="0" max="100">
+            <label id="input__num__lab" for="input__number"></label>
+          <button id="add" value="add">+</button>
+        </div>
+        <button id="confirmacion" type="submit" value="confirmacion">ok</button>
+      </div>
+ 
+      
+    </div>
 </body>
 
 

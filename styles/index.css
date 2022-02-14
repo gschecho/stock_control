@@ -5,6 +5,8 @@
     margin:0;
     padding:0;
 
+    
+
     --stockBajo:red;
     --stockMedio:orange;
     --stockAlto:green;
@@ -25,13 +27,19 @@
     font-family: sans-serif;
     
   }
+
+h1,h2,h3,p {
+
+  color: var(--mainText);
+}
   
 
 .container{
 
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin:auto;
+  padding:1rem;
   width:fit-content;
   justify-content: center;
   align-items: center;
@@ -41,14 +49,11 @@
 
 
   .container-stock {
-    border:1px solid var(--testBG);
+    /* border:1px solid var(--testBG); */
     display:flex;
     justify-content:center;
 
-   
-    padding:10px;
-
-    
+    padding:1rem;  
   }
   
 
@@ -82,7 +87,7 @@
   
   .tabla-stock {
     background-color:var(--mainColor);
-    padding:0 0.5rem 0 0; 
+    /* padding:0 0.5rem 0 0;  */
     border-radius:0 1% 1% 0%;
   }
   

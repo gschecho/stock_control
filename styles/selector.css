@@ -8,13 +8,20 @@
 
 #pasteles__lista{
 
-    border-style: none;
+  color:var(--mainColor);  
+  
+  border-style: none;
     border:none;
 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    font-size: 1em;
+    
+    margin:1rem 0;  
+    padding: 1em 0;
+        
+    font-size:1.5em;
 
-    height: 1,5rem;
+
+    
     width: 100%;
 
 
@@ -25,7 +32,7 @@
     font-weight: bolder;
 
    
-    background-color: var(--mainColor);
+    background-color: var(--accent);
 
 }
 
@@ -113,25 +120,40 @@
   
   .bloque__input{
     display:flex;
-    padding: 1rem ;
     flex-wrap: wrap;
-   
+    
     
     
   }
   
   #input__number {
     text-align:center;
-    font-size:2em;
-    font-weight:900;      
+
+    
+    font-size:3em;
+    font-weight:bolder;      
     border-style:none;
 
-    flex:1;
-    
-   
 
-    
+
+    margin:1em 0 1em 0;
+
+        
   }
+
+  
+/* Chrome, Safari, Edge, Opera  ocultar flechas input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox ocultar flechas input */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 
   #input__num__lab{
       display: none;
@@ -139,30 +161,30 @@
 
   
   .bloque__input > button {
-  
-    color:var(--mainColor);
-    font-size:1.5em;
-    font-weight:900;
-
-    min-width: 50px;
-    min-height: 50px;
-    padding: 1rem;
-
-
-    flex:1;
     
-    margin:0 1rem  0  1rem;
-    
-    background-color:var(--accent);
+    font-size:2em;
+    font-weight:bolder;
+
     border-radius:3%;
     border-style:none;
+
+    padding: 2rem 2rem;
+    flex:1;
+    
+    color:var(--mainColor);
+    background-color:var(--accent);
+
+
+    cursor:pointer;
   }
 
   
   
-  #confirmacion{
+  .confirmacion{
     
-    margin:1rem 0;  
+    color:var(--mainColor);
+    background-color: var(--accent);
+     
     padding: 1em 0;
     
     
@@ -172,9 +194,12 @@
     width: 100%;
     border-style:none;
     
+    cursor:pointer;
     
   }
   
-
+.confirmacion:first-of-type{
+  margin:2rem 0 0.5rem 0; 
+}
  
   

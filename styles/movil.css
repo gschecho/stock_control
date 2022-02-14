@@ -1,7 +1,8 @@
-@media (max-width: 700px){
- 
+@media (max-width: 350px){
+    
+*{max-width: 350px;}
 
-#substract{
+#subtract{
     order: 1;
 }
 
@@ -10,10 +11,13 @@
      order: -1;
 }
 
+
 #input__number{
     align-items: center;
     justify-content: center;
-    
+    /*appearence quita las flechas*/
+    appearance: none;
+
     margin:1em 0 1em 0;
     order: 0; 
 }

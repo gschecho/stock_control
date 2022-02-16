@@ -9,16 +9,16 @@ const bizcocho_name = document.querySelector('#bizcocho');
 
 
 
-//llamado de funciones
 
-inicio();
-seleccion__bizcocho();
-
+//creacion de objeto db
+let nombre, size, layer, cantidad;
 
 
 //default 
 
-function inicio() {
+let inicializador = function inicio() {
+
+    
 
     selection_input_layers.childNodes.forEach(layer => {
         layer.checked = false;
@@ -38,7 +38,9 @@ function inicio() {
 
 // nos muestra el pastel seleccionado
 
-function seleccion__bizcocho() {
+let seleccionador = function seleccion__bizcocho() {
+
+
     for (let i = 0; i <= bizcocho_lista.length; i++) {
 
         let bizcochoSelecionado = bizcocho_lista[i];
@@ -49,6 +51,7 @@ function seleccion__bizcocho() {
                 //nosa da el numero que seleccionamos
                 let bizcochoName = bizcochoSelecionado.getAttribute('value');
                 bizcocho_name.innerHTML = "Bizcocho de " + bizcochoName;
+                
             })
         }
     };
@@ -69,7 +72,7 @@ decrement_number.addEventListener('click', function () {
 
 // check selección
 
-
+let bizcochoSize = () => {
 
 selection_input_size.childNodes.forEach(inputs => {
 
@@ -83,8 +86,10 @@ selection_input_size.childNodes.forEach(inputs => {
         (isChecked.checked == true) ? isChecked.checked = false : isChecked.checked = true;
 
     })
-});
+}); };
 
+
+let bizcochoLayer = () => {
 selection_input_layers.childNodes.forEach(layers => {
 
     layers.addEventListener('click', () => {
@@ -100,6 +105,43 @@ selection_input_layers.childNodes.forEach(layers => {
 
     })
 });
+};
 
 
 
+function obtenerDatos () {
+
+
+
+}
+nombre = ()=> { 
+for( i = 0; i <= bizcocho_lista.length; i++){
+
+    let b = bizcocho_lista[i];
+    if (b.selected){
+       return b['value'];
+    }
+}
+}
+
+
+console.log(nombre())
+//bizcocho_lista.forEach(biz =>{ console.log(biz)});
+
+
+
+
+//llamado de funciones
+
+
+
+inicializador();
+seleccionador();
+
+bizcochoSize();
+bizcochoLayer();
+
+nombre()
+console.log(nombre)
+
+console.log(obtenerNombre)

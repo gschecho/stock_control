@@ -9,6 +9,48 @@ const listaButtons = document.querySelector('.buttons-medidas-list');
 datos(0, slotLayerTres);
 datos(0, slotLayerCuatro);
 
+/* 
+
+
+const guardarBizcocho = (nombre, medida, tres, cuatro, cantidad) => db.collection('bizcocho').doc().set({
+nombre,
+medida,
+tres,
+cuatro,
+cantidad
+})
+
+
+await guardarBizcocho()
+
+const obtenerBizcocho = ()=> db.collection('bizcocho').get();
+
+window.addEventListener('DOMContentLoader', async (e) =>{
+    const querySnapshot = await obtenerBizcocho();
+
+    querySnapshot.forEach( doc => {doc.data()} )
+})
+
+ */
+
+/*######## CREAR STOCK ######## */
+
+
+ /* 
+let nuevoBizcocho = {
+"nombre" : "Vanilla",
+"medida":,
+"layers":,
+"cantidad":
+}
+
+
+console.log( JSON.stringify( nuevoBizcocho ));
+
+  */
+
+
+
 
 // valores de stock - medida de pasteles - numero de layers
 
@@ -30,6 +72,7 @@ const stocks = {
         "4": 0
     }
 };
+
 
 
 

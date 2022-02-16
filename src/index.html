@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/index.css">
+
+    <script defer type="module" src="../js/firebase.js"></script>
+
     <script defer src="../js/app.js"></script>
     <script defer src="../js/selection.js"></script>
     <title>Document</title>
@@ -17,19 +20,19 @@
     <label for="Pasteles__lista"></label>
 
     <select name="Pasteles__lista" id="pasteles__lista">
-      <option class="li__sel__pastel" value="vainilla">Vainilla</option>
-      <option class="li__sel__pastel" value="chocolate">Chocolate</option>
-      <option class="li__sel__pastel" value="red__Velvet">Red Velvet</option>
-      <option class="li__sel__pastel" value="carrot">Carrot</option>
-      <option class="li__sel__pastel" value="frambuesa">Frambuesa</option>
-      <option class="li__sel__pastel" value="moras">Moras</option>
-      <option class="li__sel__pastel" value="salt__Caramel">Salt Caramel</option>
-      <option class="li__sel__pastel" value="funfeti">Funfeti</option>
-      <option class="li__sel__pastel" value="mwColor">Color Mister Wonderfull</option>
-      <option class="li__sel__pastel" value="arcoiris">Arcoiris</option>
+      <option class="li__sel__pastel" value="Vainilla" selected >Vainilla</option>
+      <option class="li__sel__pastel" value="Chocolate">Chocolate</option>
+      <option class="li__sel__pastel" value="Red Velvet">Red Velvet</option>
+      <option class="li__sel__pastel" value="Carrot">Carrot</option>
+      <option class="li__sel__pastel" value="Frambuesa">Frambuesa</option>
+      <option class="li__sel__pastel" value="Moras">Moras</option>
+      <option class="li__sel__pastel" value="Salt Caramel">Salt Caramel</option>
+      <option class="li__sel__pastel" value="Funfeti">Funfeti</option>
+      <option class="li__sel__pastel" value="Color Mister Wonderfull">Color Mister Wonderfull</option>
+      <option class="li__sel__pastel" value="Arcoiris">Arcoiris</option>
     </select> 
 
-    <h1 id="bizcocho" class="nombre__bizcocho">Nombre del bizcocho seleccionado</h1>  
+    <h1 id="bizcocho" class="nombre__bizcocho"></h1>  
    
 
 
@@ -66,7 +69,7 @@
 
        <div class="container_sel">
         <p>Selecciona el tamaño</p>
-        <div class="bloque__sel">
+        <div class="bloque__sel size">
           <input class="sel__input" type="checkbox" value="10"  id="sel__m10" name="sel__m10">
           <label class="sel__label" for="10">10</label><br>
           <input class="sel__input" type="checkbox" value="15" id="sel__m15" name="sel__m15">
@@ -78,14 +81,14 @@
         </div>
         
         <p>Selecciona el número de layers</p>
-        <div class="bloque__sel">
+        <div class="bloque__sel layers">
          
           <input class="sel__input" type="checkbox" value="3"  id="sel__l3" name="sel__l3">
-          <label class="sel__label" for="4">3</label><br>
+          <label class="sel__label" for="3">3</label><br>
           <input class="sel__input"  type="checkbox" value="4" id="sel__l4" name="sel__l43">
           <label class="sel__label" for="4">4</label><br>
         </div>
-        <div class="bloque__input">
+        <div class="bloque__input ">
           
           <button id="subtract" value="subtract">-</button>
           <input id="input__number" name="input__number" type="number" placeholder="10" min="0" max="100">
@@ -99,6 +102,7 @@
       
     </div>
 </body>
+
 
 
 

@@ -97,7 +97,7 @@
   }
   
   .sel__input:checked + .sel__label{
-    background-color:var(--testBG);
+    background-color:var(--active);
   }
   
   .sel__label{
@@ -117,7 +117,8 @@
     border-radius:3%;
   
   }
-  
+
+ 
   .bloque__input{
     display:flex;
     flex-wrap: wrap;
